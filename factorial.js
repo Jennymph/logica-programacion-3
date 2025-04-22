@@ -13,15 +13,15 @@ function calcularFactorial() {
         factorial *= i;
       }
       console.log(`El factorial de ${numero} es: ${factorial}`);
-      readline.close(); // Importante cerrar la interfaz readline
+      readline.close();
     } else {
       console.error(
         "Error: La entrada no es un número entero válido. Por favor, intenta de nuevo."
       );
-      calcularFactorial(); // Volver a solicitar la entrada
+      calcularFactorial(); // Volvemos a solicitar la entrada
     }
   });
 }
 
-// Llamamos a la función para iniciar el proceso
+// Llamamos a la función
 calcularFactorial();
